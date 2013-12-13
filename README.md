@@ -12,12 +12,7 @@ How to create this project from scratch?
 4. Switch to Roo shell (command "roo").
 5. run the roo commands in the file log.roo.
 6. quit roo shell.  (command "quit")
-7. find the src/main/resources/META-INF/spring/applicationContext-security.xml, modify the following and save.
-    -- add this line: <intercept-url pattern="/locations/**" access="hasRole('ROLE_ADMIN')" />
-    -- comment out this line: <password-encoder hash="sha-256" />
-    -- change password of user "admin" to "x" or any password you like.
-
-8. run command "mvn tomcat:run"
+7. run command "mvn tomcat:run"
 
 Prerequisite: This application uses MongoDB as the database so you have to install it.
 When running the application, please make sure MongoDB is up and running.
